@@ -3,17 +3,17 @@
 <h3>License: Beerware</h3><br>
 <p>example usage:</p><br>
 <code>
-var nn = require('nanomsg.node')
-  , pub = nn.socket(nn.AF_SP, nn.NN_PUB)
-  , sub = nn.socket(nn.AF_SP, nn.NN_SUB);
-
-nn.bind(pub, "tcp://127.0.0.1:7788");
-nn.connect(sub, "tcp://127.0.0.1:7788");
-nn.usleep(4000); // 4 ms
-
-nn.send(pub, "Hello from nanomsg!");
-
-console.log("received: " + nn.recv(sub));
+var nn = require('nanomsg.node')<br>
+  , pub = nn.socket(nn.AF_SP, nn.NN_PUB)<br>
+  , sub = nn.socket(nn.AF_SP, nn.NN_SUB);<br>
+<br>
+nn.bind(pub, "tcp://127.0.0.1:7788");<br>
+nn.connect(sub, "tcp://127.0.0.1:7788");<br>
+nn.usleep(4000); // 4 ms<br>
+<br>
+nn.send(pub, "Hello from nanomsg!");<br>
+<br>
+console.log("received: " + nn.recv(sub));<br>
 </code>
 <br>
 <h3>Functions:</h3><br>
@@ -31,26 +31,27 @@ nn.setsockopt(socket, level, option, optval): set socket option(all arguments mu
 nn.getsockopt(socket, level, option): get socket option(all arguments must be integer)<br>
 <br>
 <h3>Constants:</h3><br>
-//  SP address families.
-AF_SP, AF_SP_RAW
+//  SP address families.<br>
+AF_SP, AF_SP_RAW<br>
 
-//  Socket option levels: Negative numbers are reserved for transports,
-//    positive for socket types.
-NN_SOL_SOCKET
-
-//  Generic socket options (NN_SOL_SOCKET level).
-NODE_DEFINE_CONSTANT(target, );
-NN_LINGER, NN_SNDBUF, NN_RCVBUF, NN_SNDTIMEO
-NN_RCVTIMEO, NN_RECONNECT_IVL, NN_RECONNECT_IVL_MAX
-NN_SNDPRIO, NN_SNDFD, NN_RCVFD, NN_DOMAIN, NN_PROTOCOL
-NN_IPV4ONLY
-
-//  Send/recv options.
-NODE_DEFINE_CONSTANT(target, NN_DONTWAIT);
-
-//  Socket types
-NN_REQ, NN_REP
-NN_PAIR
-NN_PUSH, NN_PULL
-NN_PUB, NN_SUB
-NN_BUS
+//  Socket option levels: Negative numbers are reserved for transports,<br>
+//    positive for socket types.<br>
+NN_SOL_SOCKET<br>
+<br>
+//  Generic socket options (NN_SOL_SOCKET level).<br>
+NODE_DEFINE_CONSTANT(target, );<br>
+NN_LINGER, NN_SNDBUF, NN_RCVBUF, NN_SNDTIMEO<br>
+NN_RCVTIMEO, NN_RECONNECT_IVL, NN_RECONNECT_IVL_MAX<br>
+NN_SNDPRIO, NN_SNDFD, NN_RCVFD, NN_DOMAIN, NN_PROTOCOL<br>
+NN_IPV4ONLY<br>
+<br>
+//  Send/recv options.<br>
+NODE_DEFINE_CONSTANT(target, NN_DONTWAIT);<br>
+<br>
+//  Socket types<br>
+NN_REQ, NN_REP<br>
+NN_PAIR<br>
+NN_PUSH, NN_PULL<br>
+NN_PUB, NN_SUB<br>
+NN_BUS<br>
+<br>
