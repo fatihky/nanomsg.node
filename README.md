@@ -45,7 +45,7 @@ NN_SNDPRIO, NN_SNDFD, NN_RCVFD, NN_DOMAIN, NN_PROTOCOL<br>
 NN_IPV4ONLY<br>
 <br>
 //  Send/recv options.<br>
-NODE_DEFINE_CONSTANT(target, NN_DONTWAIT);<br>
+NN_DONTWAIT<br>
 <br>
 //  Socket types<br>
 NN_REQ, NN_REP<br>
