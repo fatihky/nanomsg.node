@@ -16,10 +16,10 @@ console.log("received: " + nn.recv(sub));<br>
 </code>
 <br>
 <h3>Functions:</h3><br>
-nn.sleep(seconds), sleep in seconds<br>
-nn.usleep(microseconds), sleep in microseconds(1 second = 1000000 microseconds)<br>
-nn.socket(sp_type, sock_type), get socket<br>
-nn.close(socket), close socket<br>
+nn.sleep(seconds): sleep in seconds<br>
+nn.usleep(microseconds): sleep in microseconds(1 second = 1000000 microseconds)<br>
+nn.socket(sp_type, sock_type): get socket<br>
+nn.close(socket): close socket<br>
 nn.bind(socket, address): bind to address<br>
 nn.connect(socket, address): connect to address<br>
 nn.send(socket, message): send message to socket(message is binary safe)<br>
